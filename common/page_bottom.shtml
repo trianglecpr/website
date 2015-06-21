@@ -1,0 +1,47 @@
+<div style="clear">&nbsp;</div>
+<section id="recent" class="blog">
+  <article>
+      <a href="/content/bls.html"><img class="border" src="/images/healthcare_people.jpg" /></a>
+      <header>
+        <h2><a href="/content/bls.html">Basic Life Support for the Healthcare provider</a></h2>
+      </header>
+      <p>This CPR course is designed for those in or entering the medical profession.</p>
+      <p><a href="/content/bls.html">Details »</a></p>
+  </article>
+  <article>
+    <a href="/content/acls.html"><img class="border" src="/images/ekg_lab.jpg" /></a>
+    <header>
+        <h2><a href="/content/acls.html">Advanced Life Support</a></h2>
+    </header>
+    <p>
+      <ul>
+        <li><p>Advanced Cardiac Life Support (ACLS)</p></li>
+        <li><p>Pediatric Life Support (PALS)</p></li>
+      </ul>
+    </p>
+    <p><a href="/content/acls.html">Details »</a></p>
+  </article>
+  <article>
+    <a href="/content/heartsaver.html"><img class="border" src="/images/personal_trainer1.jpg" /></a>
+    <header>
+      <h2><a href="/content/heartsaver.html">HeartSaver CPR</a></h2>
+    </header>
+    <p>This CPR course is designed for those who are not medical professionals, 
+       but are required to maintain CPR certification or simply for personal knowledge. 
+    </p>
+    <p><a href="/content/heartsaver.html">Details »</a></p>
+  </article>
+  <article>
+    <a href-"/content/heartsaverfirstaid.html"><img class="border" src="/images/construction_helmet.jpg" /></a>
+    <header>
+      <h2><a href="/content/heartsaverfirstaid.html">HeartSaver CPR and First Aid</a></h2>
+    </header>
+    <p>This course provides general knowledge of how to respond to a variety of common emergencies.
+      <ul>
+        <li><p>Heartsaver CPR &amp; First Aid</p></li>
+        <li><p>Heartsaver CPR &amp; Pediatric First Aid</p></li>
+      </ul>
+    </p>
+    <p><a href="/content/heartsaverfirstaid.html">Details »</a></p>
+  </article>
+</section>
