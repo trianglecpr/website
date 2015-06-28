@@ -1,4 +1,4 @@
-<div style="clear">&nbsp;</div>
+<div style="clear"></div>
 <section id="recent" class="blog">
   <article>
       <a href="/content/bls.html"><img class="border" src="/images/healthcare_people.jpg" /></a>
@@ -13,7 +13,7 @@
     <header>
         <h2><a href="/content/acls.html">Advanced Life Support</a></h2>
     </header>
-    <p>
+    <p>This course is designed for the practitioner who must manage and treat cardiac arrest and peri-arrest conditions.
       <ul>
         <li><p>Advanced Cardiac Life Support (ACLS)</p></li>
         <li><p>Pediatric Life Support (PALS)</p></li>
