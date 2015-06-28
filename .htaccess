@@ -1,0 +1,7 @@
+Action php56-cgi /php56.cgi
+<FilesMatch \.php$>
+  SetHandler php56-cgi
+</FilesMatch>
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .html
