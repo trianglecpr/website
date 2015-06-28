@@ -9,7 +9,7 @@
 <!-- CSS -->
 <link rel="stylesheet" media="screen, print" href="/css/basic.css">
 <!--[if gte IE 7]><!-->
-<link rel="stylesheet" media="screen" href="/css/screen.css">
+  <link rel="stylesheet" media="screen" href="/css/screen.css">
 <!--<![endif]-->
 <link rel="apple-touch-icon" href="/images/logo.png">
 <!-- SCRIPTS -->
@@ -18,16 +18,16 @@
 <script src="/js/jquery.js"></script>
 <!-- enable HTML5 elements in IE7+8 -->
 <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script src="/-/js/selectivizr.js"></script>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="/-/js/selectivizr.js"></script>
 <![endif]-->
 <script type="text/javascript" src="/js/scripts.js"></script>
 <script type="text/javascript" src="/js/jquery.cycle.min.js"></script>
 <script type="text/javascript" src="/js/featured.js"></script>
 <script type="text/javascript">
-$( document ).ready(function() {
+  $( document ).ready(function() {
     $("h1#branding").click(function() {
-        window.location.href = "http://trevamiller.webfactional.com";
+      window.location.href = "http://trevamiller.webfactional.com";
     });
-});
+  });
 </script>
