@@ -5,6 +5,13 @@
     <title>Triangle CPR | CPR Training for Raleigh, Durham, Chapel Hill, and the Triangle</title>
     <meta name="description"
     content="Triangle CPR: BLS (Basic Life Support) Classes in Raleigh, Durham, Chapel Hill and the greater Triangle region." />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="css/enrollware.css"/>
+  <link rel="stylesheet" href="css/coursemenu.css"/>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type='text/javascript' src='js/tcpr.js'></script>
+  <script type='text/javascript' src='js/jquery.enrollware.js'></script>      
   </head>
   <body id="home-page">
     <div id="wrap">
@@ -14,11 +21,8 @@
           <header role="page">
             <h1>Basic Life Support (BLS) for the Healthcare provider </h1>
             <p>This CPR course is designed for those in or entering the medical profession.</p>
-           <p>
-            <form style="display: inline;color:Maroon" action="http://trianglecpr.enrollware.com/schedule" method="get">
-              <button>Register Now</button>
-            </form>
-            </p>
+            <p><button id="register">Register Now</button></p>
+            <div id="coursemenu" style="display:none"></div>
           </header>
           <section id="main">
             <article>
@@ -63,5 +67,26 @@
     </div>
     <!-- /#wrap -->
     <!--#include virtual="/common/gs.shtml"-->
+   <script type='text/javascript'>
+    var fstem = window.location.pathname.split("/").pop().split('.')[0];
+    var courses = tcpr.getURL(fstem);
+    $.each(courses, function(idx, obj){
+      var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + '</h2><div id="' + obj.id + '" style="display: none"></div></div>';
+      $("#coursemenu").append(elemString);
+      $("div#"+obj.id).enrollware({
+        feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id
+      });
+      $( "h2." + obj.id ).click(function() {
+        $( "div#"+obj.id ).toggle('fast');
+      });   
+    });
+    
+    $(function(){
+      $( "#register" ).click(function() {
+        $( "#coursemenu" ).toggle('fast');
+      });   
+    });
+    
+  </script>
   </body>
 </html>

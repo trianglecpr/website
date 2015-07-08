@@ -1,0 +1,49 @@
+.enrollware
+{
+  font-size: 13px;
+  font-family: Arial, Verdana, sans-serif;
+  width: 500px;
+}
+
+.enrollware ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.enrollware ul li
+{
+  background-color: #F8F8F8;
+  border: 1px solid #EEEEEE;
+  list-style-type: none;
+}
+
+.enrollware ul li:hover
+{
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.enrollware ul li span
+{
+  font-size: 9px;
+}
+.enrollware ul li a
+{
+  color: #D60101;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0 8px 8px;
+  min-height: 30px;
+}
+
+.enrollware ul li a.greylink
+{
+  color: #888;
+}
+
+.enrollware ul li a.singleline
+{
+  padding-top: 14px;
+  padding-bottom: 5px;
+}
