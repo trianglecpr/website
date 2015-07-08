@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <header role="masthead">
 	<h1 id="branding">Triangle CPR</h1>
 	<nav>
@@ -9,3 +10,16 @@
 		</ul>
 	</nav>
 </header>
+=======
+<header role="masthead">
+<h1 id="branding">Triangle CPR</h1>
+<nav>
+  <ul>
+    <li><a title="All Courses"  href="http://trianglecpr.enrollware.com/registration/schedule.aspx">All Courses</a></li>
+    <li><a title="Location" href="/content/location.html">Location</a></li>
+    <li><a title="Policies" href="/content/policies.html">Policies</a></li>
+    <li><a title="Contact"  href="/content/contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+>>>>>>> origin/master
