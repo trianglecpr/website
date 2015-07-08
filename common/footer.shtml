@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-<footer role="siteinfo">
-	<p><img src="/images/aha_logo.png" /></p>
-	<p style="color:black;font-weight:bold;margin:auto;">&copy; Triangle CPR · 7404 Chapel Hill Road, Unit H, Raleigh, NC 27607 · 919 851 4380 · info@trianglecpr.com</p>
-</footer>
-=======
 <footer role="siteinfo">
   <p><img src="/images/aha_logo.png" /></p>
   <p style="color:black;font-weight:bold;margin:auto;">
     &copy; Triangle CPR · 7404 Chapel Hill Road, Unit H, Raleigh, NC 27607 · 919 851 4380 · info@trianglecpr.com
   </p>
 </footer>
->>>>>>> origin/master
