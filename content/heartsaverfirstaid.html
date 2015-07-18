@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--#include virtual="/common/metadata2.shtml"-->
     <title>Triangle CPR | CPR Training for Raleigh, Durham, Chapel Hill, and the Triangle</title>
     <meta name="description"
     content="Triangle CPR: American Heart Association Heartsaver and First Aid class in Raleigh, Durham, Chapel Hill and the greater Triangle region." />
+      <!--#include virtual="/common/metacourse.shtml"-->
   </head>
   <body id="home-page">
     <div id="wrap">
@@ -12,7 +12,7 @@
       <div id="content" class="blog post single">
         <section>
           <header role="page">
-            <h1>Heartsaver CPR &amp; First Aid</h1>
+            <h1>Heartsaver CPR &amp; First Aid <span class="money">$75.00</span></h1>
             <p>This course provides general knowledge of how to respond to a variety of common emergencies. 
             <ul>
               <li>
@@ -22,11 +22,8 @@
                 <p>Heartsaver CPR &amp; Pediatric First Aid</p>
               </li>
             </ul></p>
-             <p>
-            <form style="display: inline;color:Maroon" action="http://trianglecpr.enrollware.com/schedule" method="get">
-              <button>Register Now</button>
-            </form>
-            </p>
+             <p><button id="register">Register Now</button></p>
+            <div id="coursemenu" style="display:none"></div>
           </header>
           <section id="main">
             <article>
@@ -89,12 +86,13 @@
             </article>
           </section>
         </section>
+        <!--#include virtual="/common/page_bottom.shtml"-->
       </div>
     </div>
-        <!--#include virtual="/common/page_bottom.shtml"-->
-      <!-- /#content -->
-      <!--#include virtual="/common/footer.shtml"-->
-    <!-- /#wrap -->
+    <!--#include virtual="/common/footer.shtml"-->
     <!--#include virtual="/common/gs.shtml"-->
+    <script type='text/javascript'>
+        tcpr.getCourses();
+    </script>
   </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--#include virtual="/common/metadata2.shtml"-->
     <title>Triangle CPR | CPR Training for Raleigh, Durham, Chapel Hill, and the Triangle</title>
     <meta name="description"
     content="Triangle CPR: Advanced Cardiac Life Support (ACLS) and PALS (Pediatric ALS) classes in Raleigh, Durham, Chapel Hill and the greater Triangle region." />
+      <!--#include virtual="/common/metacourse.shtml"-->
   </head>
   <body id="home-page">
     <div id="wrap">
@@ -23,11 +23,8 @@
                 </li>
               </ul>
             </p>
-            <p>
-            <form style="display: inline;color:Maroon" action="http://trianglecpr.enrollware.com/schedule" method="get">
-              <button>Register Now</button>
-            </form>
-            </p>
+            <p><button id="register">Register Now</button></p>
+            <div id="coursemenu" style="display:none"></div>
           </header>
           <section id="main">
             <article>
@@ -75,12 +72,13 @@
             </article>
           </section>
         </section>
+        <!--#include virtual="/common/page_bottom.shtml"-->
       </div>
     </div>
-        <!--#include virtual="/common/page_bottom.shtml"-->
-      <!-- /#content -->
-      <!--#include virtual="/common/footer.shtml"-->
-    <!-- /#wrap -->
+    <!--#include virtual="/common/footer.shtml"-->
     <!--#include virtual="/common/gs.shtml"-->
+  <script type='text/javascript'>
+    tcpr.getCourses();
+  </script>
   </body>
 </html>
