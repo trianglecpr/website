@@ -2,8 +2,8 @@
   $.fn.enrollware = function (options) {
     var settings = {
       feed: null,
-      showLocations: true,
-      showSeatsRemaining: true
+      showLocations: false,
+      showSeatsRemaining: false
     }
     var opts = $.extend({}, settings, options);
     return this.each(function () {
@@ -94,52 +94,69 @@ var tcpr = (function () {
   var courseIDs = {
     'bls': [
       { 'id': '7276',
-        'title': 'Healthcare Provider CPR (BLS) Initial'},
+        'title': 'Healthcare Provider CPR (BLS) Initial',
+        'cost': '$50, book $12'},
       { 'id': '7275',
-        'title': 'Healthcare Provider CPR (BLS) Renewal'},
+        'title': 'Healthcare Provider CPR (BLS) Renewal',
+        'cost': '$50, book $12'},
       { 'id': '7286',
-        'title': 'Healthcare Provider CPR (BLS) Skills Check'}
+        'title': 'Healthcare Provider CPR (BLS) Skills Check',
+        'cost': ''}
     ],
     'acls': [
       { 'id': '7278',
-        'title': 'ACLS- Initial'},
+        'title': 'ACLS- Initial',
+        'cost': '$225, book $33.50'},
       { 'id': '7277',
-        'title': 'ACLS Renewal'},
+        'title': 'ACLS Renewal',
+        'cost': '$150, book $33.50'},
       { 'id': '7475',
-        'title': 'ACLS Skills Check'},
+        'title': 'ACLS Skills Check',
+        'cost': ''},
       { 'id': '7280',
-        'title': 'ACLS/BLS Initial'},
+        'title': 'ACLS/BLS Initial',
+        'cost': '$250, book $33.50'},
       { 'id': '7279',
-        'title': 'ACLS/BLS Renewal'},
+        'title': 'ACLS/BLS Renewal',
+        'cost': '$175, book $33.50'},
       { 'id': '7284',
-        'title': 'PALS Initial'},
+        'title': 'PALS Initial',
+        'cost': '$225, book $38.50'},
       { 'id': '7285',
-        'title': 'PALS Renewal'},
+        'title': 'PALS Renewal',
+        'cost': '$150, book $38.50'},
       { 'id': '7288',
-        'title': 'PALS Skills Check'}
+        'title': 'PALS Skills Check',
+        'cost': ''}
     ],
     'heartsaver': [
       { 'id': '7281',
-        'title': 'Heartsaver CPR'},
+        'title': 'Heartsaver CPR',
+        'cost': '$50'},
       { 'id': '31031',
-        'title': 'Heartsaver CPR Skills Check'}
+        'title': 'Heartsaver CPR Skills Check',
+        'cost': ''}
     ],
     'heartsaverfirstaid': [
       { 'id': '7282',
-        'title': 'Adult First Aid & CPR'},
+        'title': 'Adult First Aid & CPR',
+        'cost': '$65'},
       { 'id': '7293',
-        'title': 'Heartsaver First Aid'},
+        'title': 'Heartsaver First Aid',
+        'cost': '$50'},
       { 'id': '7283',
-        'title': 'Pediatric First Aid & CPR'},
+        'title': 'Pediatric First Aid & CPR',
+        'cost': '$65'},
       { 'id': '31030',
-        'title': 'Pediatric First Aid & CPR Skills Check'}
+        'title': 'Pediatric First Aid & CPR Skills Check',
+        'cost': ''}
     ]
   };
   var getCourses = function(){
     var fstem = window.location.pathname.split("/").pop().split('.')[0];
     var courses = tcpr.getURL(fstem);
     $.each(courses, function(idx, obj){
-      var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + '</h2>';
+      var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
       elemString += '<div id="' + obj.id + '" style="display: none"></div></div>';
       $("#coursemenu").append(elemString);
       $("div#"+obj.id).enrollware({
