@@ -157,7 +157,7 @@ var tcpr = (function () {
     var courses = tcpr.getURL(fstem);
     $.each(courses, function(idx, obj){
       var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
-      elemString += '<div id="' + obj.id + '" style="display: none"></div></div>';
+      elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
       $("#coursemenu").append(elemString);
       $("div#"+obj.id).enrollware({
         feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id

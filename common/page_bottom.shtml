@@ -1,4 +1,5 @@
 <div style="clear"></div>
+<div id="page_bottom">
 <section id="recent" class="blog">
   <article>
       <a href="/content/bls.html"><img class="border" src="/images/healthcare_people.jpg" alt="" /></a>
@@ -43,3 +44,4 @@
     <p><a href="/content/heartsaverfirstaid.html">Details »</a></p>
   </article>
 </section>
+</div>

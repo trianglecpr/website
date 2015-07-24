@@ -1,8 +1,6 @@
 .enrollware
 {
-  font-size: 13px;
-  font-family: Arial, Verdana, sans-serif;
-  width: 500px;
+/*  width: 500px;*/
 }
 
 .enrollware ul
@@ -24,16 +22,13 @@
   border: 1px solid #ccc;
 }
 
-.enrollware ul li span
-{
-  font-size: 9px;
-}
 .enrollware ul li a
 {
-  color: #D60101;
+  font-size: 90%;
+  margin-bottom: 0.5em;
+  color: maroon;
   text-decoration: none;
   display: block;
-  padding: 8px 0 8px 8px;
   min-height: 30px;
 }
 

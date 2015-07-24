@@ -1,12 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
+#page_bottom {
+    float:right;
+    position: relative;
+}
+
 /* Base Styles */
 #coursemenu,
 #coursemenu ul,
 #coursemenu li,
 #coursemenu a {
-	margin: 0;
 	padding: 0;
 	border: 0;
 	list-style: none;
@@ -14,15 +18,14 @@
 	text-decoration: none;
 	line-height: 1;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
 	position: relative;
 }
 #coursemenu a {
-	line-height: 1.3;
+	line-height: 1.2;
 }
 #coursemenu {
 	width: 250px;
-	border-bottom: 4px solid #656659;
+	border-bottom: 3px solid #656659;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -48,7 +51,6 @@
 	border-radius: 3px 3px 0 0;
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
-	font-size: 1.2em;
 	font-weight: 300;
 	text-shadow: 0 -1px 1px #000000;
 }
@@ -63,11 +65,11 @@
 	background: linear-gradient(#66665e 0%, #45463d 100%);
 }
 #coursemenu > ul > li {
-	background: #e94f31;
-	background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
-	background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
-	background: linear-gradient(#e94f31 0%, #d13516 100%);
+	background: #ed2c09;
+	background: -moz-linear-gradient(#ed2c09 0%, #d13516 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ed2c09), color-stop(100%, #d13516));
+	background: -webkit-linear-gradient(#ed2c09 0%, #d13516 100%);
+	background: linear-gradient(#ed2c09 0%, #d13516 100%);
 }
 #coursemenu > ul > li:hover {
 	background: #e84323;
@@ -79,7 +81,6 @@
 #coursemenu > ul > li > a {
 	font-size: .9em;
 	display: block;
-	background: url(menu_images/pattern.png) top left repeat;
 	color: #ffffff;
 	border: 1px solid #ba2f14;
 	border-top: none;
@@ -98,12 +99,7 @@
 #coursemenu > ul > li.active {
 	border-bottom: none;
 }
-#coursemenu > ul > li.has-sub > a span {
-	background: url(menu_images/icon_plus.png) 96% center no-repeat;
-}
-#coursemenu > ul > li.has-sub.active > a span {
-	background: url(menu_images/icon_minus.png) 96% center no-repeat;
-}
+
 /* Sub menu */
 #coursemenu ul ul {
 /*	display: none;*/
@@ -135,8 +131,8 @@
 	content: '\00BB';
 	position: absolute;
 	left: 10px;
-	color: #e94f31;
+	color: #ed2c09;
 }
 #coursemenu ul ul a:hover {
-	color: #e94f31;
+	color: #ed2c09;
 }
