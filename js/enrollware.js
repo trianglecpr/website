@@ -2,8 +2,8 @@
   $.fn.enrollware = function (options) {
     var settings = {
       feed: null,
-      showLocations: false,
-      showSeatsRemaining: false
+      showLocations: true,
+      showSeatsRemaining: true
     }
     var opts = $.extend({}, settings, options);
     return this.each(function () {
