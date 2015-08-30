@@ -152,8 +152,8 @@ var tcpr = (function () {
         'cost': ''}
     ]
   };
-  var getCourses = function(){
-    var fstem = window.location.pathname.split("/").pop().split('.')[0];
+  
+  var getCourses = function(fstem){
     var courses = tcpr.getURL(fstem);
     $.each(courses, function(idx, obj){
       var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
@@ -171,8 +171,7 @@ var tcpr = (function () {
         $( "#coursemenu" ).toggle('fast');
       });   
     });
-      
-  }
+  };
   
   return { 
     getURL: function (name) {

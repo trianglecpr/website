@@ -3,7 +3,7 @@ Title: CSS basics for old browsers and print styles
 /* -------------------------------------------- */
 
 body {
-	background-color: #FFF;
+	background-color: #FEFEFE;
 	margin: 0;
 	padding: 5%;
 	font-family: "Georgia", serif;

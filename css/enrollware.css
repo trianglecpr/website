@@ -16,15 +16,15 @@
   list-style-type: none;
 }
 
-.enrollware ul li:hover
+#coursemenu .enrollware ul li:hover
 {
   background-color: #fff;
   border: 1px solid #ccc;
 }
 
-.enrollware ul li a
+#coursemenu .enrollware ul li a
 {
-  font-size: 90%;
+  font-size: 1rem;
   margin-bottom: 0.5em;
   color: maroon;
   text-decoration: none;
@@ -32,12 +32,12 @@
   min-height: 30px;
 }
 
-.enrollware ul li a.greylink
+#coursemenu .enrollware ul li a.greylink
 {
   color: #888;
 }
 
-.enrollware ul li a.singleline
+#coursemenu .enrollware ul li a.singleline
 {
   padding-top: 14px;
   padding-bottom: 5px;
