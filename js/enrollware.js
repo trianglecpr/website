@@ -16,13 +16,13 @@
           "cache": false,
           "error": function () {
             $container.empty();
-            $container.append("<div>No matching classes were found</div>");
+            $container.append("<div>No matching classes were found. Please call for an appointment</div>");
           },
           "success": function (items) {
             $container.empty();
             if (items.length == 0) {
               $container.empty();
-              $container.append("<div>No matching classes were found</div>");
+              $container.append("<div>No matching classes were found. Please call for an appointment.</div>");
               return;
             }
             $list = $("<ul></ul>").appendTo($container);
