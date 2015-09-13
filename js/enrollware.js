@@ -2,7 +2,7 @@
   $.fn.enrollware = function (options) {
     var settings = {
       feed: null,
-      showLocations: true,
+      showLocations: false,
       showSeatsRemaining: true
     }
     var opts = $.extend({}, settings, options);
@@ -48,7 +48,7 @@
 
               if (item.dateTimes !== null && item.dateTimes.length > 1) {
                 contents += "<br><br>";
-                contents += "This class also meets on:";
+                contents += "Note that this class also meets on:";
                 $.each(item.dateTimes.slice(1), function (i, time) {
                   contents += "<br>";
                   contents += time;
@@ -69,9 +69,9 @@
                   $a.attr("title", "This class is full");
                   $a.attr("class", "greylink");
                 }
-                if (item.dateTimes !== null && item.dateTimes.length == 1 && opts.showLocations == false) {
-                  $a.attr("class", "singleline");
-                }
+//                if (item.dateTimes !== null && item.dateTimes.length == 1 && opts.showLocations == false) {
+//                  $a.attr("class", "singleline");
+//                }
               }
               else {
                 $a.attr("title", "Click to register without a schedule");
@@ -141,9 +141,6 @@ var tcpr = (function () {
       { 'id': '7282',
         'title': 'Adult First Aid & CPR',
         'cost': '$65'},
-      { 'id': '7293',
-        'title': 'Heartsaver First Aid',
-        'cost': '$50'},
       { 'id': '7283',
         'title': 'Pediatric First Aid & CPR',
         'cost': '$65'},
@@ -172,12 +169,73 @@ var tcpr = (function () {
       });   
     });
   };
+  var getAllCourses = function() {
+    var courseNames = [
+      {'name': 'bls', 'title':'Basic Life Support for the Healthcare Provider'},
+      {'name': 'acls', 'title':'Advanced Life Support'},
+      {'name': 'heartsaver', 'title':'Heartsaver CPR'},
+      {'name': 'heartsaverfirstaid', 'title':'Heartsaver CPR and First Aid'}
+      ];
+    for (var i = 0; i < courseNames.length; i++) {
+      var div0 = document.createElement( "div" );
+      var h01 = document.createElement('h1');
+      div0.appendChild(h01);
+      $("section#classlists").append(div0);
+      var sp0 = document.createElement('span');
+      var courseCategory, categoryTitle, categoryLabel;
+      
+      for (var category in courseIDs) {
+        if (category === courseNames[i]['name']) {
+          categoryLabel = category;
+          courseCategory = courseIDs[category];
+          categoryTitle = courseNames[i]['title']
+          break;
+        }
+      }
+      
+      div0.setAttribute('class', 'courseCategory');
+      sp0.textContent = categoryTitle + ':';
+      var a0 = document.createElement('a');
+      a0.setAttribute('href', '/content/' + categoryLabel + '.html');
+      a0.setAttribute('style', 'margin-left:2em;font-size: .625em;line-height: 1.45em;')
+      a0.textContent = 'Details »';
+      h01.appendChild(sp0)
+      h01.appendChild(a0)
+      for (var j = 0; j < courseCategory.length; j++) {
+        var course = courseCategory[j];
+        var div1 = document.createElement( "div" );
+        var h02 = document.createElement('h2');
+        var a = document.createElement('a');
+        a.setAttribute('href', '#');
+        a.setAttribute('onclick', 'event.preventDefault();toggleVisibility('+course.id+')')
+        h02.appendChild(a)
+        div0.appendChild(h02);
+        
+        div1.setAttribute('id', course.id);
+        div1.setAttribute('class', 'enrollware');
+        div1.setAttribute('style', 'display:none');
+        h02.setAttribute('style', 'color:maroon;cursor:pointer;');
+        var sp1 = document.createElement('span');
+        sp1.textContent = course.title;
+        var sp2 = document.createElement('span');
+        sp2.setAttribute('style', 'margin:1em;color:#333;font-family:sans-serif;text-decoration:none');
+        sp2.textContent = course.cost;
+        a.appendChild(sp1);
+        h02.appendChild(sp2);
+        
+        div0.appendChild(div1);
+        $("div#"+course.id).enrollware({
+          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+course.id});
+      }
+    }
+  };
   
   return { 
     getURL: function (name) {
       return courseIDs[name];
     },
-    getCourses: getCourses
+    getCourses: getCourses,
+    getAllCourses: getAllCourses
   };
 }());
 

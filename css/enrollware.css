@@ -14,6 +14,9 @@
   background-color: #F8F8F8;
   border: 1px solid #EEEEEE;
   list-style-type: none;
+  width: 80%;
+  margin:0.5em 0 0.5em 1em;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 #coursemenu .enrollware ul li:hover
@@ -36,7 +39,10 @@
 {
   color: #888;
 }
-
+.enrollware ul li a.greylink
+{
+  color: #888;
+}
 #coursemenu .enrollware ul li a.singleline
 {
   padding-top: 14px;

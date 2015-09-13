@@ -143,6 +143,7 @@
       width: 120px;
       height: 120px;
       margin: auto;
+      cursor: pointer;
       text-indent: -999em;
       background: url(../images/logo.png) no-repeat 0 0;
       -webkit-transition: all .3s ease;
@@ -159,6 +160,7 @@
     
     h1#branding:hover {
       opacity: .85;
+      cursor: pointer;
     }
     
     nav {
@@ -487,6 +489,7 @@ button#register:visited {
       h1#branding {
         padding-bottom: 46px;
         height: 75px;
+        cursor: pointer;
       }
       /* NAV */
       nav {
@@ -538,7 +541,7 @@ button#register:visited {
         position: relative;
         float: left;
         margin: 10px;
-        width: 712px;
+        width: 100%;
       }
       /* HEADER */
       header[role="masthead"] {
@@ -547,6 +550,7 @@ button#register:visited {
       }
       header h1#branding {
         margin-left: 20px;
+        cursor: pointer;
       }
       /* NAV */
       nav {
@@ -588,19 +592,22 @@ button#register:visited {
       }
       /* DESCRIPTION BLOCK */
       #descriptions {
-        width: 456px;
+        width: 100%;
         margin: 0 auto 20px;
       }
       #descriptions article {
-        width: 210px;
-        margin-left: auto;
-        margin-right: 24px;
+        width: 44%;
       }
       #descriptions article img {
         width: 195px;
       }
-      #descriptions article:nth-child(2) {
+      #descriptions article:nth-child(even) {
+        margin-left:0;
+        float: left;
+      }
+      #descriptions article:nth-child(odd) {
         margin-right: 0;
+        float:right;
       }
     }
     /* CLOSE WIDE MOBILE LAYOUT */
@@ -619,6 +626,7 @@ button#register:visited {
       }
       header h1#branding {
         margin: 0 auto;
+        cursor: pointer;
       }
       /* NAV */
       nav {
@@ -645,7 +653,7 @@ button#register:visited {
         display: block;
         height: 8px;
         font-style: italic;
-        color: #222;
+        color: maroon;
         -webkit-transition: all .2s ease;
         -moz-transition: all .2s ease;
         -o-transition: all .2s ease;
@@ -658,6 +666,7 @@ button#register:visited {
       /* FEATURED */
       #featured {
         height: 310px;
+        padding-bottom: 10px;
       }
       #featured #slides {
         width: 100%;
@@ -741,6 +750,7 @@ button#register:visited {
       header h1#branding {
         background-position: left bottom;
         background-size: 120px auto;
+        cursor: pointer;
       }
     }
     /* CLOSE RETINA MEDIA QUERY */

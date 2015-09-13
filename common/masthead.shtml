@@ -1,5 +1,5 @@
 <header role="masthead">
-	<h1 id="branding">Triangle CPR</h1>
+	<h1 id="branding" title="Home">Triangle CPR</h1>
 	<nav>
 		<ul>
 			<li><a title="Register" href="/content/allcourses.html">Register</a></li>
