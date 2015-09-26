@@ -100,7 +100,7 @@ var tcpr = (function () {
         'title': 'Healthcare Provider CPR (BLS) Renewal',
         'cost': '$50, book $12'},
       { 'id': '7286',
-        'title': 'Healthcare Provider CPR (BLS) Online & Skills Check',
+        'title': 'Healthcare Provider CPR (BLS) Online and Skills Check',
         'cost': ''}
     ],
     'acls': [
