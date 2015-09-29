@@ -293,7 +293,7 @@
     footer[role="siteinfo"] a {
       color: maroon;
     }
-    
+
     button#register {
       -moz-box-shadow: inset 0px 1px 0px 0px #be6a6a;
       -webkit-box-shadow: inset 0px 1px 0px 0px #aa2323;
@@ -325,7 +325,7 @@
     }
 button#register:visited {
       position: relative;
-      background-color: blueviolet;
+      background-color: #e4685d;
       top: 1px;
     }
     /*  CONTENT */
