@@ -6,7 +6,7 @@ var tcpr = (function () {
         'title': 'Healthcare Provider CPR (BLS) Initial'},
       { 'id': '7275',
         'title': 'Healthcare Provider CPR (BLS) Renewal'},
-      { 'id': '52177',
+      { 'id': 'ct52177',
         'title': 'Healthcare Provider CPR (BLS) Skills Check'}
     ],
     'acls': [
