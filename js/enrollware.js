@@ -95,7 +95,7 @@ var tcpr = (function () {
     'bls': [
       { 'id': '7276',
         'title': 'Healthcare Provider CPR (BLS)',
-        'cost': '$50, book $13.25'},
+        'cost': '$55, book $13.25'},
       { 'id': '52177',
         'title': 'Healthcare Provider CPR (BLS) Online and Skills Check',
         'cost': '$55'}
@@ -112,10 +112,10 @@ var tcpr = (function () {
         'cost': ''},
       { 'id': '7280',
         'title': 'ACLS/BLS Initial',
-        'cost': '$250, book $37.00'},
+        'cost': '$265, book $37.00'},
       { 'id': '7279',
         'title': 'ACLS/BLS Renewal',
-        'cost': '$175, book $37.00'},
+        'cost': '$190, book $37.00'},
       { 'id': '7284',
         'title': 'PALS Initial',
         'cost': '$225, book $38.50'},
@@ -129,7 +129,7 @@ var tcpr = (function () {
     'heartsaver': [
       { 'id': '7281',
         'title': 'Heartsaver CPR',
-        'cost': '$50'},
+        'cost': '$55'},
       { 'id': '31031',
         'title': 'Heartsaver CPR Online and Skills Check',
         'cost': ''}
@@ -137,10 +137,10 @@ var tcpr = (function () {
     'heartsaverfirstaid': [
       { 'id': '7282',
         'title': 'Adult First Aid & CPR',
-        'cost': '$65'},
+        'cost': '$75'},
       { 'id': '7283',
         'title': 'Pediatric First Aid & CPR',
-        'cost': '$65'},
+        'cost': '$75'},
       { 'id': '31030',
         'title': 'Pediatric First Aid & CPR Online and Skills Check',
         'cost': ''}
