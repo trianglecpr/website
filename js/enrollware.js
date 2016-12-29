@@ -98,7 +98,7 @@ var tcpr = (function () {
         'cost': '$55, book $13.25'},
       { 'id': '52177',
         'title': 'Healthcare Provider CPR (BLS) Online and Skills Check',
-        'cost': '$55'}
+        'cost': '$60'}
     ],
     'acls': [
       { 'id': '7278',
@@ -118,10 +118,10 @@ var tcpr = (function () {
         'cost': '$190, book $37.00'},
       { 'id': '7284',
         'title': 'PALS Initial',
-        'cost': '$225, book $38.50'},
+        'cost': '$225, book $42.50'},
       { 'id': '7285',
         'title': 'PALS Renewal',
-        'cost': '$150, book $38.50'},
+        'cost': '$150, book $42.50'},
       { 'id': '7288',
         'title': 'PALS Online and Skills Check',
         'cost': ''}
