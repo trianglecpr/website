@@ -98,7 +98,7 @@ var tcpr = (function () {
         'cost': '$55, book $13.25'},
       { 'id': '52177',
         'title': 'Healthcare Provider CPR (BLS) Online and Skills Check',
-        'cost': '$60'}
+        'cost': '$65'}
     ],
     'acls': [
       { 'id': '7278',
