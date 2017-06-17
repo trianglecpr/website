@@ -1,6 +1,5 @@
 # mobile_files, the website for Triangle CPR
 
-
 This is how the website is set up:
 
  - `index.html` is the home page
