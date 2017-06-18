@@ -7,7 +7,7 @@ This is how the website is set up:
  - `index.html` is the home page
  - `content/` subdirectory that contains the content of all pages
  - `common/` subdirectory that contains common info used on all pages
- - `images/` uhmmm.
+ - `images/` uhmmm, yeah.
 
 Actual content pages in `content/` directory. 
 
