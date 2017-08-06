@@ -28,7 +28,7 @@
 <script type="text/javascript">
 $( document ).ready(function() {
     $("h1#branding").click(function() {
-        window.location.href = "http://trianglecpr.com";
+        window.location.href = "https://trianglecpr.com";
     });
 });
 </script>
