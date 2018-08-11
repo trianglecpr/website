@@ -2,8 +2,14 @@
 	<h1 id="branding" title="Home">Triangle CPR</h1>
 	<nav>
 		<ul>
-            <li style="margin-left:-1em;"><a style="text-decoration:none" title="All Courses" href="/content/allcourses.html"><span style="text-decoration:none;color:maroon;font-style:normal;font-weight: bold">&#11047; Register &#11047;</span></a></li>
-			<li><a title="Location" href="/content/location.html">Location</a></li>
+<li>
+<div tabindex="0" class="onclick-menu">
+<ul class="onclick-menu-content">
+  <li><a title="Raleigh/Cary" href="/content/raleigh_cary_courses.html">Raleigh/Cary</a></li>
+  <li><a title="Durham" href="/content/durham_courses.html">Durham</a></li>
+</ul>
+</div>
+</li>
 			<li><a title="Policies" href="/content/policies.html">Policies</a></li>
 			<li><a title="Contact"  href="/content/contact.html">Contact</a></li>
 			<li><a title="Calendar"  href="https://trianglecpr.enrollware.com/calendar">Calendar</a></li>
