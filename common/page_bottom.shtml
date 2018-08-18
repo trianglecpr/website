@@ -1,3 +1,13 @@
+<section>
+  <h1 style="text-align:center">Locations</h1>
+<table style="width:80%">
+<tr>
+<td align="left">
+<a href="/content/raleigh_cary.html"><h2>Raleigh/Cary</h2></a></td>
+<td align="right">
+<a href="/content/durham.html"><h2>Durham</h2></a></td></tr>
+</table>
+</section>
 <div id="descriptions" style="width:100%">
 <section>
     <header><h1>Course Descriptions</h1></header>
