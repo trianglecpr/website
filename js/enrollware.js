@@ -156,7 +156,7 @@ var tcpr = (function () {
         elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
         $("#coursemenu").append(elemString);
         $("div#"+obj.id).enrollware({
-          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
+          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&locationid="+location
         });
       });
   };
@@ -216,7 +216,7 @@ var tcpr = (function () {
 
         div0.appendChild(div1);
         $("div#"+course.id).enrollware({
-          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+course.id+"&location="+location});
+          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+course.id+"&locationid="+location});
       }
     }
   };
