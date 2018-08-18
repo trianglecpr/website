@@ -149,6 +149,16 @@ var tcpr = (function () {
 
   var getCourses = function(fstem, location){
     var courses = tcpr.getURL(fstem);
+ 
+    $.each(courses, function(idx, obj){
+      var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
+      elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
+      $("#coursemenu").append(elemString);
+      $("div#"+obj.id).enrollware({
+        feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
+      });
+    });
+
     $(function(){
       $( "#registerraleigh" ).click(function() {
         $( "#coursemenu" ).toggle('fast');
@@ -157,17 +167,6 @@ var tcpr = (function () {
     $(function(){
       $( "#registerdurham" ).click(function() {
         $( "#coursemenu" ).toggle('fast');
-      });
-    });
-    $.each(courses, function(idx, obj){
-      var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
-      elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
-      $("#coursemenu").append(elemString);
-      $("div#"+obj.id).enrollware({
-        feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
-      });
-      $( "h2." + obj.id ).click(function() {
-        $( "div#"+obj.id ).toggle('fast');
       });
     });
   };
