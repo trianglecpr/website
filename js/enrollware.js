@@ -2,7 +2,7 @@
   $.fn.enrollware = function (options) {
     var settings = {
       feed: null,
-      showLocations: false,
+      showLocations: true,
       showSeatsRemaining: true
     }
     var opts = $.extend({}, settings, options);
@@ -147,9 +147,9 @@ var tcpr = (function () {
     ]
   };
 
-  var getCourses = function(fstem, location){
+  var getCourses = function(fstem){
     var courses = tcpr.getURL(fstem);
-    var location = '';
+    var location = 2733;
     $(function(){
       $( "#registerraleigh" ).click(function() {
         location = 2733;

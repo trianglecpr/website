@@ -10,8 +10,8 @@
     </li>
     <li style="background-color:lightgray">
       <a><b>Calendar</b></a>
-      <a title="Raleigh/Cary Calendar" href="https://trianglecpr.enrollware.com/calendar?location=2733">Raleigh/Cary</a>
-      <a title="Durham Calendar"  href="https://trianglecpr.enrollware.com/calendar?location=65613">Durham</a>
+      <a title="Raleigh/Cary Calendar" target="_blank" href="https://trianglecpr.enrollware.com/calendar?location=2733">Raleigh/Cary</a>
+      <a title="Durham Calendar" target="_blank" href="https://trianglecpr.enrollware.com/calendar?location=65613">Durham</a>
     </li>
     <li><a title="Policies" href="/content/policies.html">Policies</a></li>
     <li><a title="Contact"  href="/content/contact.html">Contact</a></li>
