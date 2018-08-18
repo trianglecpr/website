@@ -159,7 +159,7 @@ var tcpr = (function () {
         });
       });
     } else {
-      $("#coursemenu") = '';
+      $("#coursemenu").textContent = '';
     }
     $( "#coursemenu" ).toggle('fast');
   };
