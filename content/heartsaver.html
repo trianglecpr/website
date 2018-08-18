@@ -20,8 +20,8 @@
             medical professionals, but are required to maintain CPR
             certification or simply for personal knowledge.</p>
             <h2>Register</h2>
-            <button id="registerraleigh">Raleigh/Cary</button>
-            <button id="registerdurham">Durham</button>
+            <button id="register" onclick="tcpr.getCourses('heartsaver', 2733)">Raleigh/Cary</button>
+            <button id="register"  onclick="tcpr.getCourses('heartsaver', 65613)">Durham</button>
             <div id="coursemenu" style="display:none"></div>
           </header>
         </header>
@@ -68,9 +68,6 @@
   </div>
   <!--#include virtual="/common/footer.shtml"-->
   <!--#include virtual="/common/gs.shtml"-->
-  <script type='text/javascript'>
-    tcpr.getCourses('heartsaver');
-  </script>
 </body>
 
 </html>

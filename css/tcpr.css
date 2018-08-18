@@ -293,7 +293,7 @@
     footer[role="siteinfo"] a {
       color: maroon;
     }
-    button#registerdurham {
+    button#register {
       -moz-box-shadow: inset 0px 1px 0px 0px #be6a6a;
       -webkit-box-shadow: inset 0px 1px 0px 0px #aa2323;
       box-shadow: inset 0px 1px 0px 0px #aa2323;
@@ -313,54 +313,21 @@
       text-shadow: 0px 1px 0px #aa2323;
     }
 
-    button#registerdurham:hover {
+    button#register:hover {
       background-color: #e4685d;
     }
 
-    button#registerdurham:active {
+    button#register:active {
       position: relative;
       background-color: #e4685d;
       top: 1px;
     }
-button#registerdurham:visited {
+button#register:visited {
       position: relative;
       background-color: #e4685d;
       top: 1px;
-    }
-button#registerraleigh {
-      -moz-box-shadow: inset 0px 1px 0px 0px #be6a6a;
-      -webkit-box-shadow: inset 0px 1px 0px 0px #aa2323;
-      box-shadow: inset 0px 1px 0px 0px #aa2323;
-      background-color: maroon;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-      border: 1px solid red;
-      cursor: pointer;
-      /*    height: 5em;*/
-      color: #ffffff;
-      padding-top: 0.3em;
-      font-family: Palatino;
-      font-size: 110%;
-      font-weight: bold;
-      text-decoration: none;
-      text-shadow: 0px 1px 0px #aa2323;
     }
 
-    button#registerraleigh:hover {
-      background-color: #e4685d;
-    }
-
-    button#registerraleigh:active {
-      position: relative;
-      background-color: #e4685d;
-      top: 1px;
-    }
-button#registerraleigh:visited {
-      position: relative;
-      background-color: #e4685d;
-      top: 1px;
-    }
     /*  CONTENT */
 
     .contact button {
