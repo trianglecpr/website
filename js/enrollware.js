@@ -149,7 +149,7 @@ var tcpr = (function () {
 
   var getCourses = function(fstem, location){
     var courses = tcpr.getURL(fstem);
- 
+    ("#coursemenu").empty();
     $.each(courses, function(idx, obj){
       var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
       elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
