@@ -1,19 +1,21 @@
 <header role="masthead">
 	<h1 id="branding" title="Home">Triangle CPR</h1>
+        
 	<nav>
-		<ul>
-<li>
-<div tabindex="0" class="onclick-menu">
-<ul class="onclick-menu-content">
-  <li><a title="Raleigh/Cary" href="/content/raleigh_cary_courses.html">Raleigh/Cary</a></li>
-  <li><a title="Durham" href="/content/durham_courses.html">Durham</a></li>
+<ul>
+    <li style="background-color:lightgray">
+      <a><b>Register</b></a>
+      <a title="Raleigh/Cary" href="/content/raleigh_cary_courses.html">Raleigh/Cary</a>
+      <a title="Durham" href="/content/durham_courses.html">Durham</a>
+    </li>
+    <li style="background-color:lightgray">
+      <a><b>Calendar</b></a>
+      <a title="Raleigh/Cary Calendar" href="https://trianglecpr.enrollware.com/calendar">Raleigh/Cary</a>
+      <a title="Durham Calendar"  href="https://trianglecpr.enrollware.com/calendar">Durham</a>
+    </li>
+    <li><a title="Policies" href="/content/policies.html">Policies</a></li>
+    <li><a title="Contact"  href="/content/contact.html">Contact</a></li>
+    <li><a title="Claim E-Card" href="https://ecards.heart.org/student/myecards">Claim E-Card</a></li>
 </ul>
-</div>
-</li>
-			<li><a title="Policies" href="/content/policies.html">Policies</a></li>
-			<li><a title="Contact"  href="/content/contact.html">Contact</a></li>
-			<li><a title="Calendar"  href="https://trianglecpr.enrollware.com/calendar">Calendar</a></li>
-			<li><a title="Claim E-Card" href="https://ecards.heart.org/student/myecards">Claim E-Card</a></li>
-		</ul>
-	</nav>
+</nav>
 </header>

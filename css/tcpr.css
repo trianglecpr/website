@@ -490,6 +490,7 @@ button#register:visited {
         padding-bottom: 46px;
         height: 75px;
         cursor: pointer;
+        margin-top: 50px;
       }
       /* NAV */
       nav {
@@ -625,7 +626,7 @@ button#register:visited {
         margin: 69px 0 20px;
       }
       header h1#branding {
-        margin: 0 auto;
+        margin: 50px auto;
         cursor: pointer;
       }
       /* NAV */
