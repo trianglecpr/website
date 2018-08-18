@@ -158,8 +158,6 @@ var tcpr = (function () {
           feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
         });
       });
-    } else {
-      $("#coursemenu").textContent = '';
     }
     $( "#coursemenu" ).toggle('fast');
   };
