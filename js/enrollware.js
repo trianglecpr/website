@@ -146,27 +146,35 @@ var tcpr = (function () {
         'cost': ''}
     ]
   };
-  
-  var getCourses = function(fstem){
+
+  var getCourses = function(fstem, location){
     var courses = tcpr.getURL(fstem);
+    var location = '';
+    $(function(){
+      $( "#registerraleigh" ).click(function() {
+        location = 2733;
+        $( "#coursemenu" ).toggle('fast');
+      });
+    });
+    $(function(){
+      $( "#registerdurham" ).click(function() {
+        location = 65613;
+        $( "#coursemenu" ).toggle('fast');
+      });
+    });
     $.each(courses, function(idx, obj){
       var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
       elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
       $("#coursemenu").append(elemString);
       $("div#"+obj.id).enrollware({
-        feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id
+        feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
       });
       $( "h2." + obj.id ).click(function() {
         $( "div#"+obj.id ).toggle('fast');
-      });   
-    });
-    $(function(){
-      $( "#register" ).click(function() {
-        $( "#coursemenu" ).toggle('fast');
-      });   
+      });
     });
   };
-  var getAllCourses = function() {
+  var getAllCourses = function(location) {
     var courseNames = [
       {'name': 'bls', 'title':'Basic Life Support for the Healthcare Provider'},
       {'name': 'acls', 'title':'Advanced Life Support'},
@@ -180,7 +188,7 @@ var tcpr = (function () {
       $("section#classlists").append(div0);
       var sp0 = document.createElement('span');
       var courseCategory, categoryTitle, categoryLabel;
-      
+
       for (var category in courseIDs) {
         if (category === courseNames[i]['name']) {
           categoryLabel = category;
@@ -189,7 +197,7 @@ var tcpr = (function () {
           break;
         }
       }
-      
+
       div0.setAttribute('class', 'courseCategory');
       sp0.textContent = categoryTitle + ':';
       var a0 = document.createElement('a');
@@ -207,7 +215,7 @@ var tcpr = (function () {
         a.setAttribute('onclick', 'event.preventDefault();toggleVisibility('+course.id+')')
         h02.appendChild(a)
         div0.appendChild(h02);
-        
+
         div1.setAttribute('id', course.id);
         div1.setAttribute('class', 'enrollware');
         div1.setAttribute('style', 'display:none');
@@ -219,15 +227,15 @@ var tcpr = (function () {
         sp2.textContent = course.cost;
         a.appendChild(sp1);
         h02.appendChild(sp2);
-        
+
         div0.appendChild(div1);
         $("div#"+course.id).enrollware({
-          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+course.id});
+          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+course.id+"&location="+location});
       }
     }
   };
-  
-  return { 
+
+  return {
     getURL: function (name) {
       return courseIDs[name];
     },
@@ -235,5 +243,3 @@ var tcpr = (function () {
     getAllCourses: getAllCourses
   };
 }());
-
-  
