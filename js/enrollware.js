@@ -147,7 +147,7 @@ var tcpr = (function () {
     ]
   };
 
-  var getCourses = function(fstem location){
+  var getCourses = function(fstem, location){
     var courses = tcpr.getURL(fstem);
     $(function(){
       $( "#registerraleigh" ).click(function() {
