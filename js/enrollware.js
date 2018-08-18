@@ -147,18 +147,15 @@ var tcpr = (function () {
     ]
   };
 
-  var getCourses = function(fstem){
+  var getCourses = function(fstem location){
     var courses = tcpr.getURL(fstem);
-    var location = 2733;
     $(function(){
       $( "#registerraleigh" ).click(function() {
-        location = 2733;
         $( "#coursemenu" ).toggle('fast');
       });
     });
     $(function(){
       $( "#registerdurham" ).click(function() {
-        location = 65613;
         $( "#coursemenu" ).toggle('fast');
       });
     });
