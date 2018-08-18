@@ -149,17 +149,19 @@ var tcpr = (function () {
 
   var getCourses = function(fstem, location){
     var courses = tcpr.getURL(fstem);
-    ("#coursemenu").empty();
-    $.each(courses, function(idx, obj){
-      var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
-      elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
-      $("#coursemenu").append(elemString);
-      $("div#"+obj.id).enrollware({
-        feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
+    if ($("#coursemenu").is('visible')){
+      $.each(courses, function(idx, obj){
+        var elemString = '<div><h2 class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
+        elemString += '<div class="enrollware" id="' + obj.id + '" style="display: none"></div></div>';
+        $("#coursemenu").append(elemString);
+        $("div#"+obj.id).enrollware({
+          feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
+        });
       });
-    });
+    } else {
+      ("#coursemenu").empty();
+    }
     $( "#coursemenu" ).toggle('fast');
-    
   };
   var getAllCourses = function(location) {
     var courseNames = [
