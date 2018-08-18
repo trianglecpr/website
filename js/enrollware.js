@@ -158,17 +158,8 @@ var tcpr = (function () {
         feed:"https://trianglecpr.enrollware.com/registration/schedule-feed.ashx?courseid="+obj.id+"&location="+location
       });
     });
-
-    $(function(){
-      $( "#registerraleigh" ).click(function() {
-        $( "#coursemenu" ).toggle('fast');
-      });
-    });
-    $(function(){
-      $( "#registerdurham" ).click(function() {
-        $( "#coursemenu" ).toggle('fast');
-      });
-    });
+    $( "#coursemenu" ).toggle('fast');
+    
   };
   var getAllCourses = function(location) {
     var courseNames = [
