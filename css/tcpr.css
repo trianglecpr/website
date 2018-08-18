@@ -1,6 +1,6 @@
     /* PAGE STRUCTURE
 ----------------------------------------------- */
-    
+
     body {
       width: 896px;
       height: 100%;
@@ -13,7 +13,7 @@
       background: #FFF;
       -webkit-text-size-adjust: 100%;
     }
-    
+
     #wrap {
       position: relative;
       width: 100%;
@@ -21,25 +21,25 @@
       margin: 0 auto;
       background: #FFF;
     }
-    
+
     #content {
       position: relative;
       float: right;
       width: 712px;
     }
-    
+
     #content h1,
     h2,
     h3 {
       color: maroon;
     }
-    
+
     a {
       color: maroon;
     }
 
     /* HOME PAGE */
-    
+
     .slide {
       position: absolute;
       top: 0px;
@@ -49,57 +49,57 @@
       z-index: 4;
       width: 896px;
     }
-    
+
     .slide #slide-1 {
       display: block;
       z-index: 5;
       opacity: 1;
     }
-    
+
     #featured {
       position: relative;
       width: 100%;
       height: 510px;
       /*border: 1px solid red;*/
     }
-    
+
     #featured #slides {
       width: 712px;
       height: 446px;
       overflow: hidden;
     }
-    
+
     #featured section {
       position: relative;
       width: 896px;
     }
-    
+
     #featured section img {
       position: absolute;
       left: -92px;
       width: 100%;
     }
     /* hide slides when js is disabled */
-    
+
     #featured #slide-2,
     #featured #slide-3,
     #featured #slide-4 {
       display: none;
     }
-    
+
     #featured section h1,
     #featured section h2 {
       position: absolute;
       left: 0;
       font-style: italic;
     }
-    
+
     #featured section.alt h1,
     #featured section.alt h2 {
       left: auto;
       right: 184px;
     }
-    
+
     #featured section h1 {
       top: 285px;
       padding: 10px 24px 15px;
@@ -107,7 +107,7 @@
       background: #FFF;
       font-size: 1.5em;
     }
-    
+
     #featured section h2 {
       top: 334px;
       padding: 8px 24px 12px;
@@ -116,7 +116,7 @@
       font-size: 1em;
       background: #111;
     }
-    
+
     #featured section a h1,
     #featured section a h2 {
       -webkit-transition: opacity .2s ease;
@@ -124,20 +124,20 @@
       -o-transition: opacity .2s ease;
       transition: opacity .2s ease;
     }
-    
+
     #featured section a:hover h1,
     #featured section a:hover h2 {
       opacity: .8;
     }
     /* ----- NAVIGATION ----- */
-    
+
     header[role="masthead"] {
       float: left;
       width: 160px;
       margin-bottom: 25px;
       /*border: 1px solid red;*/
     }
-    
+
     h1#branding {
       display: block;
       width: 120px;
@@ -151,18 +151,18 @@
       -o-transition: all .3s ease;
       transition: all .3s ease;
     }
-    
+
     h1#branding a {
       display: block;
       width: 120px;
       height: 120px;
     }
-    
+
     h1#branding:hover {
       opacity: .85;
       cursor: pointer;
     }
-    
+
     nav {
       position: absolute;
       top: 158px;
@@ -170,22 +170,22 @@
       width: 160px;
       /*border: 1px solid navy;*/
     }
-    
+
     nav ul {
       width: 100%;
       padding: 0;
     }
-    
+
     nav li {
       display: block;
       margin-bottom: 18px;
       line-height: 1.3em;
     }
-    
+
     nav li:last-child {
       margin: 0;
     }
-    
+
     nav a {
       display: block;
       height: 28px;
@@ -197,21 +197,21 @@
       -o-transition: all .2s ease;
       transition: all .2s ease;
     }
-    
+
     nav a:hover {
       color: #ed2c09;
     }
-    
+
     nav li a {
       background-position: 0 65%;
       background-repeat: no-repeat;
     }
-    
+
     nav li a:hover {
       background-position: 5px 65%;
     }
     /* ----- DESCRIPTIONS BLOCK ----- */
-    
+
     #descriptions {
       width: 100%;
       clear: both;
@@ -219,53 +219,53 @@
       overflow: hidden;
       /*border: 1px solid navy;*/
     }
-    
+
     #descriptions section > header h1 {
       text-align: center;
       font-style: italic;
       color: maroon;
     }
-    
+
     #descriptions article {
       float: left;
       width: 160px;
       margin: 0 24px 25px 0;
     }
-    
+
     #descriptions article img {
       width: 139px;
       background: #FFF;
       overflow: hidden;
     }
-    
+
     #descriptions article:last-child {
       margin-right: 0;
     }
-    
+
     #descriptions article h1 {
       margin: 10px 0 10px;
       line-height: 1.3em;
     }
-    
+
     #descriptions article p {
       font-size: .875em;
       line-height: 1.45em;
     }
-    
+
     #descriptions ul {
       list-style-type: none;
       font-size: .875em;
       line-height: 1.45em;
       padding: 0;
     }
-    
+
     #descriptions ul li {
       color: #333333;
       font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
       margin-bottom: 1.2em;
       font-style: italic;
     }
-    
+
     #descriptions header a {
       color: maroon;
       font-style: italic;
@@ -275,7 +275,7 @@
     }
     /* FOOTER
 ----------------------------------------------- */
-    
+
     footer[role="siteinfo"] {
       clear: both;
       position: relative;
@@ -284,17 +284,16 @@
       border-top: 2px solid #E5E5E5;
       color: #AAA;
     }
-    
+
     footer[role="siteinfo"] p {
       line-height: 1.5em;
       font-size: .75em;
     }
-    
+
     footer[role="siteinfo"] a {
       color: maroon;
     }
-
-    button#register {
+    button#registerdurham {
       -moz-box-shadow: inset 0px 1px 0px 0px #be6a6a;
       -webkit-box-shadow: inset 0px 1px 0px 0px #aa2323;
       box-shadow: inset 0px 1px 0px 0px #aa2323;
@@ -313,55 +312,89 @@
       text-decoration: none;
       text-shadow: 0px 1px 0px #aa2323;
     }
-    
-    button#register:hover {
+
+    button#registerdurham:hover {
       background-color: #e4685d;
     }
-    
-    button#register:active {
+
+    button#registerdurham:active {
       position: relative;
       background-color: #e4685d;
       top: 1px;
     }
-button#register:visited {
+button#registerdurham:visited {
+      position: relative;
+      background-color: #e4685d;
+      top: 1px;
+    }
+button#registerraleigh {
+      -moz-box-shadow: inset 0px 1px 0px 0px #be6a6a;
+      -webkit-box-shadow: inset 0px 1px 0px 0px #aa2323;
+      box-shadow: inset 0px 1px 0px 0px #aa2323;
+      background-color: maroon;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid red;
+      cursor: pointer;
+      /*    height: 5em;*/
+      color: #ffffff;
+      padding-top: 0.3em;
+      font-family: Palatino;
+      font-size: 110%;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #aa2323;
+    }
+
+    button#registerraleigh:hover {
+      background-color: #e4685d;
+    }
+
+    button#registerraleigh:active {
+      position: relative;
+      background-color: #e4685d;
+      top: 1px;
+    }
+button#registerraleigh:visited {
       position: relative;
       background-color: #e4685d;
       top: 1px;
     }
     /*  CONTENT */
-    
+
     .contact button {
       height: 2em;
       width: 6em;
     }
-    
+
     .contact button span {
       color: maroon;
       font-weight: bold;
       font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
       font-size: 120%;
     }
-    
+
     #content button#register {
       height: 2em;
       width: 8em;
     }
-    
+
     #content article img {
       max-width: 100%;
       height: auto;
     }
-    
+
     #content .right {
       float: right;
       margin: 0 0 20px 20px;
     }
-    
+
     #content .left {
       float: left;
       margin: 0 20px 20px 0;
     }
-    
+
     #content img.border {
       padding: 9px;
       background: #FFF;
@@ -370,39 +403,39 @@ button#register:visited {
       -moz-box-shadow: 1px 1px 3px #F5F5F5;
       box-shadow: 1px 1px 3px #F5F5F5;
     }
-    
+
     #content .img-wrap {
       max-width: 100%;
       margin-bottom: 20px;
     }
-    
+
     #content img {
       margin-bottom: 0;
     }
-    
+
     #content .post-image {
       float: right;
       width: 252px;
       margin: 0 0 10px 20px;
     }
-    
+
     #content .post-image img {
       width: 232px;
     }
-    
+
     #content article header h1 {
       margin-bottom: 20px;
       line-height: 1.25em;
       font-size: 1.5em;
     }
-    
+
     #content header .meta {
       font-size: .875em;
       color: #AAA;
       font-style: italic;
     }
     /* REGISTRATION MENU */
-    
+
     #coursemenu,
     #coursemenu ul,
     #coursemenu li,
@@ -418,21 +451,21 @@ button#register:visited {
       position: relative;
       cursor: pointer;
     }
-    
+
     #coursemenu a {
       line-height: 1.2;
     }
-    
+
     #coursemenu {
       width: 30em;
       padding-left: 0.25em;
     }
-    
+
     #content div.group h2 {
       font-style: italic;
       font-size: 1em;
     }
-    
+
     #content div.group {
       margin: 1em 0 1em;
       padding: 1em 0 1em;
@@ -442,7 +475,7 @@ button#register:visited {
     /* RESPONSIVE SIZING */
     /* WIDE DESKTOP LAYOUT
 ----------------------------------------------- */
-    
+
     @media only screen and (min-width: 992px) {
       body {
         width: 1080px;
@@ -475,7 +508,7 @@ button#register:visited {
     /* CLOSE WIDE LAYOUT */
     /* TABLET LAYOUT
 ----------------------------------------------- */
-    
+
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       body {
         width: 712px;
@@ -512,7 +545,7 @@ button#register:visited {
         display: inline;
         padding: 15px 15px 0 15px;
       }
-      
+
       /* FEATURED */
       #featured {
         top: 40px;
@@ -532,7 +565,7 @@ button#register:visited {
     /* CLOSE TABLET LAYOUT */
     /* WIDE MOBILE LAYOUT (LANDSCAPE/480PX)
 ----------------------------------------------- */
-    
+
     @media only screen and (min-width: 481px) and (max-width: 767px) {
       body {
         width: 100%;
@@ -614,7 +647,7 @@ button#register:visited {
     /* CLOSE WIDE MOBILE LAYOUT */
     /* MOBILE LAYOUT (PORTRAIT/320PX)
 ----------------------------------------------- */
-    
+
     @media only screen and (max-width: 480px) {
       body {
         width: 320px;
@@ -745,7 +778,7 @@ button#register:visited {
     /* CLOSE MOBILE LAYOUT */
     /*	RETINA OVERRIDES
 ----------------------------------------------- */
-    
+
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-device-pixel-ratio: 2) {
       header h1#branding {
