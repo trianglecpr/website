@@ -152,7 +152,7 @@ var tcpr = (function () {
     $("#coursemenu").css("display","block");
     var courses = tcpr.getURL(fstem);
       $.each(courses, function(idx, obj){
-        var elemString = '<div><h2 onclick=$("#"' + obj.id +'").show() class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
+        var elemString = '<div><h2 onclick=$("#' + obj.id +'").show() class="' + obj.id + '">' + obj.title + ' <span class="cost">' + obj.cost + '</span></h2>';
         elemString += '<div class="enrollware" id="' + obj.id + '"></div></div>';
         $("#coursemenu").append(elemString);
         $("div#"+obj.id).enrollware({
