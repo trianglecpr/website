@@ -9,6 +9,11 @@
       <a title="Durham" href="/content/alldurham.html">Durham</a>
     </li>
     <li style="background-color:lightgray">
+      <a><b>Locations</b></a>
+      <a title="Raleigh/Cary" href="/content/raleigh_cary.html">Raleigh/Cary</a>
+      <a title="Durham" href="/content/durham.html">Durham</a>
+    </li>
+    <li style="background-color:lightgray">
       <a><b>Calendar</b></a>
       <a title="Raleigh/Cary Calendar" target="_blank" href="https://trianglecpr.enrollware.com/calendar?location=2733">Raleigh/Cary</a>
       <a title="Durham Calendar" target="_blank" href="https://trianglecpr.enrollware.com/calendar?location=65613">Durham</a>
