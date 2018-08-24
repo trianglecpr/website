@@ -129,7 +129,7 @@ var tcpr = (function () {
     'heartsaver': [
       { 'id': '7281',
         'title': 'Heartsaver CPR',
-        'cost': '$55'},
+        'cost': '$60'},
       { 'id': '31031',
         'title': 'Heartsaver CPR Online and Skills Check',
         'cost': ''}
@@ -137,10 +137,10 @@ var tcpr = (function () {
     'heartsaverfirstaid': [
       { 'id': '7282',
         'title': 'Adult First Aid & CPR',
-        'cost': '$75'},
+        'cost': '$85'},
       { 'id': '7283',
         'title': 'Pediatric First Aid & CPR',
-        'cost': '$75'},
+        'cost': '$85'},
       { 'id': '31030',
         'title': 'Pediatric First Aid & CPR Online and Skills Check',
         'cost': ''}
