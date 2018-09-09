@@ -17,7 +17,7 @@
         <h2><a href="/content/bls.html">Basic Life Support for the Healthcare provider ($55)</a></h2>
       </header>
       <p>This CPR course is designed for those in or entering the medical profession.</p>
-      <p><a href="/content/bls.html">Details »</a></p>
+      <p><a href="/content/bls.html">Course Description »</a></p>
   </article>
   <article>
     <a href="/content/acls.html"><img class="border" src="/images/ekg_lab.jpg" alt="" /></a>
@@ -29,7 +29,7 @@
         <li><p>Advanced Cardiac Life Support (ACLS)</p></li>
         <li><p>Pediatric Life Support (PALS)</p></li>
       </ul>
-    <p><a href="/content/acls.html">Details »</a></p>
+    <p><a href="/content/acls.html">Course Description »</a></p>
   </article>
   <article>
     <a href="/content/heartsaver.html"><img class="border" src="/images/personal_trainer1.jpg" alt="" /></a>
@@ -39,7 +39,7 @@
     <p>This CPR course is designed for those who are not medical professionals, 
        but are required to maintain CPR certification or simply for personal knowledge. 
     </p>
-    <p><a href="/content/heartsaver.html">Details »</a></p>
+    <p><a href="/content/heartsaver.html">Course Description »</a></p>
   </article>
   <article>
     <a href="/content/heartsaverfirstaid.html"><img class="border" src="/images/construction_helmet.jpg" alt="" /></a>
@@ -51,7 +51,7 @@
         <li>Heartsaver CPR &amp; First Aid</p></li>
         <li>Heartsaver CPR &amp; Pediatric First Aid</li>
       </ul>
-    <p><a href="/content/heartsaverfirstaid.html">Details »</a></p>
+    <p><a href="/content/heartsaverfirstaid.html">Course Description »</a></p>
   </article>
 </section>
 </div>
