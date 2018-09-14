@@ -1,9 +1,9 @@
 (function ($) {
   $.fn.enrollware = function (options) {
     var $empty_response = '';
-      if (options.locationid !== 2733) {
+      if (options.locationid !== '2733') {
         $empty_response = '<div>Coming soon to this location. Please see Raleigh/Cary location class list.</div>';
-      } else {
+      } else { 
         $empty_response = '<div>No matching classes were found. Please call for an appointment</div>'
       }
     var settings = {
