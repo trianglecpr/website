@@ -7,6 +7,12 @@
     }
     var opts = $.extend({}, settings, options);
     return this.each(function () {
+      var $empty_response = '';
+      if (opts.location === "Triangle CPR-Durham") {
+        $empty_response = '<div>Coming soon to this location. Please see Raleigh/Cary class list.</div>';
+      } else {
+        $empty_response = '<div>No matching classes were found. Please call for an appointment</div>'
+      }
       var $container = $(this);
       if (opts.feed) {
         $.ajax({
@@ -16,13 +22,13 @@
           "cache": false,
           "error": function () {
             $container.empty();
-            $container.append("<div>No matching classes were found. Please call for an appointment</div>");
+            $container.append($empty_response);
           },
           "success": function (items) {
             $container.empty();
             if (items.length == 0) {
               $container.empty();
-              $container.append("<div>No matching classes were found. Please call for an appointment.</div>");
+              $container.append($empty_response);
               return;
             }
             $list = $("<ul></ul>").appendTo($container);
