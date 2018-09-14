@@ -13,7 +13,6 @@
     }
     var opts = $.extend({}, settings, options);
     return this.each(function () {
-      
       var $container = $(this);
       if (opts.feed) {
         $.ajax({
