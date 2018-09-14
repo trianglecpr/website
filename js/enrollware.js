@@ -1,5 +1,11 @@
 (function ($) {
   $.fn.enrollware = function (options) {
+    var $empty_response = '';
+      if (options.feed.includes("locationid=65613")) {
+        $empty_response = '<div>Coming soon to this location. Please see Raleigh/Cary location class list.</div>';
+      } else { 
+        $empty_response = '<div>No matching classes were found. Please call for an appointment</div>'
+      }
     var settings = {
       feed: null,
       showLocations: true,
@@ -7,12 +13,7 @@
     }
     var opts = $.extend({}, settings, options);
     return this.each(function () {
-      var $empty_response = '';
-      if (this.id === "65613") {
-        $empty_response = '<div>Coming soon to this location. Please see Raleigh/Cary location class list.</div>';
-      } else { 
-        $empty_response = '<div>No matching classes were found. Please call for an appointment</div>'
-      }
+      
       var $container = $(this);
       if (opts.feed) {
         $.ajax({
