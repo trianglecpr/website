@@ -1,6 +1,7 @@
 mobile wide size, fix the layout of the descriptions
 
 
+sokay.
 
 fix bls last image to clear the horizontal line.
 'course description' jams up to image on portrait mobile
