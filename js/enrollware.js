@@ -138,9 +138,6 @@ var tcpr = (function () {
         'cost': '$60'}
     ],
     'heartsaverfirstaid': [
-      { 'id': '7282',
-        'title': 'Adult First Aid & CPR',
-        'cost': '$85'},
       { 'id': '31172',
         'title': 'Heartsaver CPR Classroom Course & Online First Aid Skills Check',
         'cost': '$85'},
