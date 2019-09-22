@@ -130,7 +130,11 @@ var tcpr = (function () {
         'cost': '$150, book $46.00'},
       { 'id': '7288',
         'title': 'PALS Online and Skills Check',
-        'cost': ''}
+        'cost': ''},
+      { 'id': '202531',
+        'title': 'NRP: Neonatal Resuscitation Program Skills Check',
+       'cost': '$50'
+      }
     ],
     'heartsaver': [
       { 'id': '7281',
