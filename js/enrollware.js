@@ -133,7 +133,7 @@ var tcpr = (function () {
         'cost': ''},
       { 'id': '202531',
         'title': 'NRP: Neonatal Resuscitation Program Skills Check',
-       'cost': '$50'
+       'cost': '$75'
       }
     ],
     'heartsaver': [
