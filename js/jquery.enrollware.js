@@ -1,11 +1,5 @@
 (function ($) {
     $.fn.enrollware = function (options) {
-      var $empty_response = '';
-        if (options.feed.includes("locationid=65613")) {
-          $empty_response = '<div>Coming soon to this location. Please see Raleigh/Cary location class list.</div>';
-        } else { 
-          $empty_response = '<div>No matching classes were found. Please call for an appointment</div>'
-        }
       var settings = {
         feed: null,
         showLocations: true,
@@ -22,13 +16,13 @@
             "cache": false,
             "error": function () {
               $container.empty();
-              $container.append($empty_response);
+              $container.append("<div>No matching classes were found</div>");
             },
             "success": function (items) {
               $container.empty();
               if (items.length == 0) {
                 $container.empty();
-                $container.append($empty_response);
+                $container.append("<div>No matching classes were found</div>");
                 return;
               }
               $list = $("<ul></ul>").appendTo($container);
@@ -47,6 +41,9 @@
                 else if (opts.showSeatsRemaining) {
                   contents += " (" + (item.seatsLeft > 0 ? item.seatsLeft + " seat" + (item.seatsLeft != 1 ? "s" : "") + " left" : "full") + ")";
                 }
+                else if (item.seatsLeft == 0) {
+                  contents += " (full)";
+                }
   
                 if (opts.showLocations) {
                   contents += "<span><br>" + item.location + "</span>";
@@ -54,7 +51,7 @@
   
                 if (item.dateTimes !== null && item.dateTimes.length > 1) {
                   contents += "<br><br>";
-                  contents += "Note that this class also meets on:";
+                  contents += "This class continues on:";
                   $.each(item.dateTimes.slice(1), function (i, time) {
                     contents += "<br>";
                     contents += time;
@@ -67,21 +64,21 @@
                 if (item.id > 0) {
                   if (item.closed) {
                     $a.attr("title", "Registration is closed for this class");
-                    $a.attr("class", "greylink");
+                    $a.addClass("greylink");
                   } else if (item.seatsLeft > 0) {
                     $a.attr("title", "Click to choose this class");
                   }
                   else {
                     $a.attr("title", "This class is full");
-                    $a.attr("class", "greylink");
+                    $a.addClass("greylink");
                   }
-  //                if (item.dateTimes !== null && item.dateTimes.length == 1 && opts.showLocations == false) {
-  //                  $a.attr("class", "singleline");
-  //                }
+                  if (item.dateTimes !== null && item.dateTimes.length == 1 && opts.showLocations == false) {
+                    $a.addClass("singleline");
+                  }
                 }
                 else {
                   $a.attr("title", "Click to register without a schedule");
-                  $a.attr("class", "singleline");
+                  $a.addClass("singleline");
                   contents = "I will call to schedule my classroom session";
                 }
                 $a.html(contents);
@@ -94,5 +91,4 @@
       });
     }
   })(jQuery);
-  
   

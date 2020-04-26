@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Triangle CPR: Contact Information</title>
+  <meta name="description" content="Triangle CPR: Contact information and form." />
+  <!--#include virtual="/includes/meta_head.shtml"-->
+</head>
+
+<body class="subpage">
+  <!--#include virtual="/includes/top_menu.shtml"-->
+  <div class="col-md-12">
+    <h1>Contact Us:</h1>
+    <address style="text-align: left;">
+      <a title="Call Us" href="tel://1-919-851-4380">+1 (919) 851-4380</a><br/>
+      <a title="Send a Message" href="mailto:info@trianglecpr.com">info@trianglecpr.com</a>
+    </address>
+
+    <h2>Contact Form</h2>
+
+    <p>Thank you for your interest. At Triangle CPR, your business is important to us.
+      We will respond to your request as soon as possible.</p>
+    <div>
+      <form id="ajax-contact" method="post" action="/service/contact">
+        <div class="field">
+          <p>
+            <label for="name">Your Name:</label>
+            <input style="width:50%" type="text" id="name" name="name" required="" />
+          </p>
+        </div>
+        <div class="field">
+          <p>
+            <label for="email">Your Email:</label>
+            <input style="width:50%" type="email" id="email" name="email" required="" />
+          </p>
+        </div>
+        <div class="field">
+          <label for="message">Your Message:</label><br />
+          <textarea style="width:75%;margin:1em;" id="message" rows="5" name="message" required=""></textarea>
+        </div>
+        <div class="field">
+          <p>
+            <button type="button" class="btn btn-lg btn-outline-dark">Send</button>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+    <!--#include virtual="/includes/meta_foot.shtml"-->
+</body>
+
+</html>

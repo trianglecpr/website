@@ -1,0 +1,91 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 style="text-align: center;">Course Descriptions</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 card">
+      <img class="card-image-top img-rounded" src="/images/healthcare_people.jpg" width="75%" />
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="/pages/bls_description.html">Basic Life Support for the Healthcare provider: BLS</a>
+        </h5>
+        <p>($55)</p>
+        
+        <p class="card-text">This CPR course is designed for those in or entering the medical profession.</p>
+        <div class="card-footer">
+          <a class="btn" style="background-color: white;color:maroon;" href="/pages/bls_description.html">Course
+            Description</a></div>
+      </div>
+    </div>
+    <div class="col-md-3 card">
+      <img class="card-image-top" width="75%" src="/images/ekg_lab.jpg" alt="" /></a>
+      <div class="card-body">
+        <h5 class="card-title"><a href="/pages/acls_description.html">Advanced Cardiac Life Support: ACLS</a>
+        </h5>
+        <p>(renewal $150; initial $225)</p>
+        
+        <p class="card-text">This course is designed for the practitioner who must manage and treat cardiac arrest
+          and peri-arrest
+          conditions.
+        </p>
+        <div class="card-footer"><a class="btn" style="background-color: white;color:maroon;"
+            href="/pages/acls_description.html">Course Description</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 card">
+      <img class="card-image-top" width="75%" src="/images/ekg_lab.jpg" alt="" /></a>
+      <div class="card-body">
+        <h5 class="card-title"><a href="/pages/pals_description.html">Pediatric Advanced Life Support: PALS</a>
+        </h5>
+        <p>(renewal $150; initial $225)</p>
+        <p class="card-text">This course is designed for the practitioner who must manage and treat pediatric cardiac arrest
+          and peri-arrest
+          conditions.
+        </p>
+        <div class="card-footer"><a class="btn" style="background-color: white;color:maroon;"
+            href="/pages/pals_description.html">Course Description</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 card">
+      <img class="card-image-top" width="75%" src="/images/personal_trainer1.jpg" alt="" />
+      <div class="card-body">
+        <h5 class="card-title"><a href="/pages/hs_description.html">Heartsaver CPR</a></h5>
+        <p>(CPR $60; CPR & First Aid $85)</p>
+        <p class="card-text">This CPR course is designed for those who are not medical professionals, but are
+          required to maintain CPR
+          certification or simply for personal knowledge.
+        </p>
+        <div class="card-footer"><a class="btn" style="background-color: white;color:maroon;"
+            href="/pages/hs_description.html">Course Description</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-3 card">
+      <img class="card-image-top" width="75%" src="/images/construction_helmet.jpg" alt="" />
+      <div class="card-body">
+        <h5 class="card-title"><a href="/pages/hsfa_description.html">
+            Heartsaver CPR and First Aid</a>
+          <p>($85)</p>
+        </h5>
+        <p class="card-text">This course provides general knowledge of how to respond to a variety of common
+          emergencies.
+          <ul>
+            <li>Heartsaver CPR &amp; First Aid</p>
+        </li>
+        <li>Heartsaver CPR &amp; Pediatric First Aid</li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer"><a class="btn" style="background-color: white;color:maroon;"
+          href="/pages/hsfa_description.html">Course Description</a></p>
+      </div>
+    </div> -->
+  </div>
+</div>
+</div>

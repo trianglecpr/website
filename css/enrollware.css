@@ -1,6 +1,8 @@
 .enrollware
 {
-/*  width: 500px;*/
+  font-size: 13px;
+  font-family: Arial, Verdana, sans-serif;
+  width: 500px;
 }
 
 .enrollware ul
@@ -14,36 +16,33 @@
   background-color: #F8F8F8;
   border: 1px solid #EEEEEE;
   list-style-type: none;
-  width: 80%;
-  margin:0.5em 0 0.5em 1em;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
-#coursemenu .enrollware ul li:hover
+.enrollware ul li:hover
 {
   background-color: #fff;
   border: 1px solid #ccc;
 }
 
-#coursemenu .enrollware ul li a
+.enrollware ul li span
 {
-  font-size: 1rem;
-  margin-bottom: 0.5em;
-  color: maroon;
+  font-size: 9px;
+}
+.enrollware ul li a
+{
+  color: #D60101;
   text-decoration: none;
   display: block;
+  padding: 8px 0 8px 8px;
   min-height: 30px;
 }
 
-#coursemenu .enrollware ul li a.greylink
-{
-  color: #888;
-}
 .enrollware ul li a.greylink
 {
   color: #888;
 }
-#coursemenu .enrollware ul li a.singleline
+
+.enrollware ul li a.singleline
 {
   padding-top: 14px;
   padding-bottom: 5px;

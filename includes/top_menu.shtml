@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg" width="100%">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://trevamiller.webfactional.com">
+        <svg width="30" height="30" viewBox="0 0 100 100">
+          <clipPath id="myClip">
+            <circle style=" animation: openYourHeart 15s infinite;" cx="40" cy="35" r="35" />
+          </clipPath>
+          <!-- The original black heart, for reference -->
+          <path id="heart" d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+          <use clip-path="url(#myClip)" xlink:href="#heart" fill="red" />
+        </svg>
+      </a>
+    </div>
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="/pages/course_descriptions.html">Course Descriptions</a></li>
+      <li class="nav-item"><a class="nav-link" href="/pages/policies.html">Policies</a></li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle redonwhite" type="button" id="dropdown_directions"
+            data-toggle="dropdown", aria-haspopup="true" aria-expanded="true">
+            Directions</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdown_directions">
+            <li><a href="../pages/directions_raleigh.html">Raleigh</a></li>
+            <li><a href="../pages/directions_durham.html">Durham</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">View E-Card</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact Us</a></li> -->
+    </ul>
+  </nav>
+</div>

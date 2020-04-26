@@ -1,97 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>Triangle CPR | American Heart Training in Raleigh, Durham, Chapel Hill, and the Triangle</title>
-  <meta name="description" content="Quality education for health-care providers and individuals, Triangle CPR
- offers CPR, first aid, ACLS, BLS, and PALS to Raleigh, Durham, Chapel Hill and the greater Triangle region." />
-  <!--#include virtual="/common/metahome.shtml"-->
-<style>
-.onclick-menu {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-}
-
-.onclick-menu:before {
-    content: "Register";
-    text-align: center:
-}
-.onclick-menu:focus {
-    pointer-events: none;
-}
-.onclick-menu:focus .onclick-menu-content {
-    opacity: 1;
-    background-color: lightgray;
-    visibility: visible;
-    pointer-events: auto;
-}
-.onclick-menu-content {
-    position: absolute;
-    z-index: 1;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0.5s;
-}
-</style>
+  <meta charset="utf-8" />
+  <title>Triangle CPR</title>
+  <!--#include virtual="/includes/meta_head.shtml"-->
 </head>
 
-<body id="home-page">
-  <div id="wrap">
-    <!--#include file="common/masthead.shtml"-->
-    <div id="content">
-      <section id="featured">
-        <div id="slides" style="position: relative;">
-          <section id="slide-1">
-            <img src="/images/people_sign.jpg" alt="Image: The right class for you.">
-          </section>
-
-          <section id="slide-2">
-            <img src="/images/healthcare_woman.jpg" alt="Image: Flexible Scheduling">
-            <h1>Helping you help others.</h1>
-            <h2>Our flexible scheduling helps to meet your needs.</h2>
-          </section>
-
-          <section id="slide-3">
-            <img src="/images/floor_mannikins.jpg" alt="Image: CPR Where You Are">
-            <h1>CPR where you are.</h1>
-            <h2>Classes can be conducted at your location.</h2>
-          </section>
-
-          <section id="slide-4">
-            <img src="images/baby_hand.jpg" alt="Image: Learn CPR">
-            <h1>Be someone’s hero.</h1>
-            <h2>Learn CPR. </h2>
-          </section>
+<body class="main">
+  
+  <!--#include virtual="/includes/top_menu.shtml"-->
+  <!-- BEGIN BANNER -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="bannerlogo">
+          <img width="20%" src="images/logo.png" />
+          Triangle CPR
+        </p>
+        <p class="register">Yes, we are open.<br/>
+            <a style="color:white;text-decoration: underline;" href="pages/covid19.html">COVID-19 Statement</a></p>
+        <p class="register">Register Now!</p>
+        <p class="registerbuttons">
+            <a class="register btn btn-lg" href="pages/allraleigh.html" role="button">Raleigh</a>
+            &nbsp;
+            <a class="register btn btn-lg" href="pages/alldurham.html" role="button">Durham</a>
+        </p>
+        
+        <ul class="submenu">
+          <li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle whiteonred" type="button" id="dropdown_bls"
+                data-toggle="dropdown", aria-haspopup="true" aria-expanded="true">
+                BLS</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown_bls">
+                <li><a href="pages/class_template.html?site=2733&category=bls">Raleigh</a></li>
+                <li><a href="pages/class_template.html?site=65613&category=bls">Durham</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle whiteonred" type="button" id="dropdown_acls"
+                data-toggle="dropdown", aria-haspopup="true" aria-expanded="true">
+                ACLS</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown_acls">
+                <li><a href="pages/class_template.html?site=2733&category=acls">Raleigh</a></li>
+                <li><a href="pages/class_template.html?site=65613&category=acls">Durham</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle whiteonred" type="button" id="dropdown_pals"
+                data-toggle="dropdown", aria-haspopup="true" aria-expanded="true">
+                PALS</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown_pals">
+                <li><a href="pages/class_template.html?site=2733&category=pals">Raleigh</a></li>
+                <li><a href="pages/class_template.html?site=65613&category=pals">Durham</a></li>
+              </ul>
+          </div>
+          <li><a  class="whiteonred" href="pages/class_template.html?site=2733&category=nrp">NRP</a></li>
+        </ul>
+        <ul class="submenu">
+          <li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle whiteonred" type="button" id="dropdown_hs"
+                data-toggle="dropdown", aria-haspopup="true" aria-expanded="true">
+                Heartsaver: CPR/First Aid</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown_hs">
+                <li><a href="pages/class_template.html?site=2733&category=heartsaver">Raleigh</a></li>
+                <li><a href="pages/class_template.html?site=65613&category=heartsaver">Durham</a></li>
+              </ul>
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 righthandside">
+        <p><img src="images/aha_logo.png" /></p>
+        <p class="banner_calltoaction">Same day certifications.</p>
+          <div class="container">
+          <address>
+            <a href="tel:+19198514380">(919) 851-4380</a>
+            &nbsp;
+            <a href="mailto:info@trianglecpr.com">info@trianglecpr.com</a>
+          </address>
         </div>
-      </section>
-<hr/>
-      <!--#include file="common/page_bottom.shtml"-->
+      </div>
     </div>
   </div>
-  <!--#include file="common/footer.shtml"-->
-  <!--#include file="common/gs.shtml"-->
-  <script>
-function drop_loc() {
-    document.getElementById("loc_down").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.loc_btn')) {
-
-    var dropdowns = document.getElementsByClassName("loc_down-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+  <!-- END BANNER -->
+  <!--#include virtual="/includes/descriptions.shtml"-->
+  <!--#include virtual="/includes/meta_foot.shtml"-->
 </body>
 
 </html>
