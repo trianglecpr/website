@@ -9,12 +9,12 @@ var courseIDs = {
       {
         'id': '7276',
         'title': 'Healthcare Provider CPR (BLS)',
-        'cost': 'Class: $55, Required Book $15.75'
+        'cost': 'Class: $60, Required Book $17.25'
       },
       {
         'id': '52177',
         'title': 'Healthcare Provider CPR (BLS) Online and Skills Check',
-        'cost': 'Class: $65'
+        'cost': 'Class: $75'
       }]
     },
   'acls': {
@@ -23,27 +23,27 @@ var courseIDs = {
       {
         'id': '7278',
         'title': 'ACLS - Initial',
-        'cost': 'Class: $225, Required Book $42.25'
+        'cost': 'Class: $225, Required Book $45.25'
       },
       {
         'id': '7277',
         'title': 'ACLS Renewal',
-        'cost': 'Class: $150, Required Book $42.25'
+        'cost': 'Class: $150, Required Book $45.25'
       },
       {
         'id': '7475',
         'title': 'ACLS Online and Skills Check',
-        'cost': 'Fee: $200'
+        'cost': 'Fee: $220'
       },
       {
         'id': '7280',
         'title': 'ACLS/BLS Initial',
-        'cost': 'Class: $265, Required Book $42.25'
+        'cost': 'Class: $265, Required Book $45.25'
       },
       {
         'id': '7279',
         'title': 'ACLS/BLS Renewal',
-        'cost': 'Class: $190, Required Book $42.25'
+        'cost': 'Class: $190, Required Book $45.25'
       }]
   },
   'pals': {
@@ -52,17 +52,17 @@ var courseIDs = {
       {
         'id': '7284',
         'title': 'PALS Initial',
-        'cost': 'Class: $225, Required Book $49.75'
+        'cost': 'Class: $225, Required Book 52.25'
       },
       {
         'id': '7285',
         'title': 'PALS Renewal',
-        'cost': 'Class: $150, Required Book $49.75'
+        'cost': 'Class: $150, Required Book $52.25'
       },
       {
         'id': '7288',
         'title': 'PALS Online and Skills Check',
-        'cost': 'Fee: $200'
+        'cost': 'Fee: $220'
       }]
     },
   'nrp': {
