@@ -65,15 +65,6 @@ var courseIDs = {
         'cost': 'Fee: $220'
       }]
     },
-  'nrp': {
-    'title': 'NRP: Neonatal Resuscitation Program Skills Check',
-    'classes': [
-      {
-        'id': '202531',
-        'title': 'NRP: Neonatal Resuscitation Program Skills Check',
-        'cost': 'Fee: $75'
-      }]
-  },
   'heartsaver': {
     'title': 'Heartsaver CPR or CPR/First Aid',
     'classes': [
