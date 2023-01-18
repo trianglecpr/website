@@ -71,17 +71,17 @@ var courseIDs = {
       {
         'id': '7281',
         'title': 'Heartsaver CPR',
-        'cost': 'Class: $60'
+        'cost': 'Class: $70'
       },
       {
         'id': '31172',
         'title': 'Heartsaver CPR Classroom Course & Online First Aid Skills Check',
-        'cost': 'Fee: $85'
+        'cost': 'Fee: $90'
       },
       {
         'id': '7283',
         'title': 'Pediatric First Aid & CPR',
-        'cost': 'Class: $85'
+        'cost': 'Class: $90'
       }]
   }
 };
