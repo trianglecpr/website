@@ -1,7 +1,5 @@
 mobile wide size, fix the layout of the descriptions
 
-
-
 fix bls last image to clear the horizontal line.
 'course description' jams up to image on portrait mobile
 nav buttons aren't red on portrait mobile
